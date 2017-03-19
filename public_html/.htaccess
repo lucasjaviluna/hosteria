@@ -1,0 +1,22 @@
+#Orden en el que Apache busca los archivos
+#DirectoryIndex index_construccion.html
+
+#Para impedir que se vea el contenido de carpetas publicas. Ej: images
+#Para habilitar: +Indexes
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.hosteriasanbenito.com.ar$ [NC] #Todo lo que no coincide con el dominio hosteriasanbenito.com.ar
+RewriteRule ^(.*)$ http://www.hosteriasanbenito.com.ar/$1 [L,R=301] #lo manda a hosteriasanbenito.com.ar
+
+#Si el navegador lo permite, aplica compresion a los datos enviados
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+
+#error 404
+#ErrorDocument 400 /http://www.google.com.ar

@@ -1,0 +1,27 @@
+﻿/* TEAM */
+	Chef:Lucas Javier Luna
+	Contact: lucasjaviluna@gmail.com
+	From:Rosario, Santa Fe, Argentina
+
+	UI developer: Lucas Javier Luna
+
+	One eyed illustrator:
+
+	Standard Man:
+
+	Web designer:
+
+/* THANKS */
+
+	ES Translator: Lucas Luna
+	
+	EN Translator:
+	
+	Media Queries by: 
+		
+
+/* SITE */
+	Last update:2013/06/01
+	Language: Castellano
+	Doctype:HTML5
+	IDE: NetBeans 7.3
